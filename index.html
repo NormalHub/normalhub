@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script>
+      const supabaseUrl = 'https://azyqehacondkkgkvvvpj.supabase.co'
+const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF6eXFlaGFjb25ka2tna3Z2dnBqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDE4NjY4NzMsImV4cCI6MjA1NzQ0Mjg3M30.OcSF5gR3uCzUxgurGhi42RWW3ntRGrzGUp0VMrobUTs";
+const supabase = createClient(supabaseUrl, supabaseKey)
+      const { data, error } = await supabase
+  .storage
+  .from('i')
+  .download('r.apk')
+    </script>
+  </head>
+  <body>
+    
+  </body>
+</html>
